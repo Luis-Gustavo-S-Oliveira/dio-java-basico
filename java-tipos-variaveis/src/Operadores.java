@@ -33,5 +33,20 @@ public class Operadores {
             resultado = "falso";
   
         // String resultado = a==b ? "verdadeiro" : "falso"----> jeito de simplificar com o ternario(nao se limita a String)
+        
+        boolean condicao1=true;
+        boolean condicao2=false;
+
+        if (condicao1 && condicao2 == true) // o && é o "E", isso quer dizes que ele só vai imprimir se as 2 forem
+            System.out.print("é verdade");
+        else
+            System.out.print("é falso");
+
+        if (condicao1 || condicao2 == true) // o || é o "ou", isso quer dizes que ele só vai imprimir se uma das 2 forem
+            System.out.print("é verdade");
+        else
+            System.out.print("é falso");
     }
+
+    
 }

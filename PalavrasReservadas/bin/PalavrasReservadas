@@ -1,0 +1,39 @@
+public class PalavrasReservadas {
+    
+    import // controle de pacotes
+    Package 
+
+    public //modificadores de acesso
+    private
+    protected //acesso por classes no mesmo pacote
+
+    boolean // tipos primitivos
+    byte
+    char
+    double
+    float
+    int 
+    long
+    short
+    void
+
+    abstract//modificadores de classes,variaveis ou metodos
+    class
+    extends
+    final 
+    implements
+    interface
+    native
+    new
+    static
+    strictf
+    synchronized
+    transient
+    volatile
+
+    break//controle de fluxo
+    case
+    continue
+    
+
+}

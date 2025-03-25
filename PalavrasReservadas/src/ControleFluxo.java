@@ -14,11 +14,16 @@ public class ControleFluxo {
                             }
         if (mes == 1){
             System.out.println("ferias");
-            }else if (mes == 7){
+            }else {
+                if (mes == 7){
                 System.out.println("ferias");
-                }else if (mes == 12){
+                }else{
+                     if (mes == 12){
                     System.out.println("ferias");
-                }            
+                    } else
+                    System.out.println("nao tem ferias");  
+                }
+            }         
 
    
         switch (mes) {

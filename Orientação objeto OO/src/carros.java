@@ -1,4 +1,4 @@
-public class carros {
+public class carros extends veiculos{
 
 String modelo;
 String cor;

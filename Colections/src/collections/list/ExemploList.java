@@ -21,7 +21,7 @@ public class ExemploList {
 
     System.out.println(notas.toString()); //toString é "opicional"  
 
-    System.out.println("Exiba a posição da nota 4.7 = " + notas.indexOf(4.7));
+     System.out.println("Exiba a posição da nota 4.7 = " + notas.indexOf(4.7));
 
     System.out.println("Adicione na lista a nota 8.0 na posição 4 "  );
     notas.add(4, 8.0);
@@ -69,9 +69,8 @@ public class ExemploList {
         Double next = iterator.next(); // colocou o proxima iterator1 dentro da variavel next 
         if(next < 7) iterator1.remove(); // se next for menos que 7 ele é removido 
 
-
-
     }
+    System.out.println(notas);
 
     System.out.println("apague toda a lista");
     notas.clear();

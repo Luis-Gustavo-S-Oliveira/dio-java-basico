@@ -1,6 +1,8 @@
 package collections.list;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class ExemploList {
@@ -34,11 +36,51 @@ public class ExemploList {
     /*  System.out.println("Exiba todas as notas na ordem em que foram informadas : ");
     System.out.print(notas); */
 
-    System.out.print("Exiba a terceira nota adicionada ");
+    System.out.println("Exiba a terceira nota adicionada " + notas.get(2));
 
-    System.out.println("Exiba a menor nota : ");
+    System.out.println("Exiba a menor nota : " + Collections.min(notas));
 
-    System.out.print("Exiba a maior nota : ");
+    System.out.println("Exiba a maior nota : " + Collections.max(notas));
+
+    System.out.println("Exiba a soma dos valores");
+    Iterator<Double> iterator = notas.iterator();
+    double soma = 0.0;
+    while (iterator.hasNext()){
+        Double next = iterator.next();
+        soma +=next;
+
+    }
+    System.out.println("Exiba a soma dos valores" + soma);
+
+    System.out.println("Exiba a media das notas : " + (soma/notas.size()));
+
+
+    System.out.println("Remova a nota 0 ");
+    notas.remove(0.0);
+    System.out.println(notas);
+
+    System.out.println("Remova a nota na posição 0");
+    notas.remove(0.0);
+    System.out.println(notas);
+
+    System.out.println(" Remova as notas menores que 7 ");
+    Iterator<Double> iterator1 = notas.iterator(); // transformou a lista em um iterator 
+    while(iterator1.hasNext()){ // perguntou se dentro do interator1 tem um proximo
+        Double next = iterator.next(); // colocou o proxima iterator1 dentro da variavel next 
+        if(next < 7) iterator1.remove(); // se next for menos que 7 ele é removido 
+
+
+
+    }
+
+    System.out.println("apague toda a lista");
+    notas.clear();
+    System.out.println(notas);
+
+    System.out.println("Confira se a lista esta vazia " + notas.isEmpty());
+
+
+
 
 
  } 

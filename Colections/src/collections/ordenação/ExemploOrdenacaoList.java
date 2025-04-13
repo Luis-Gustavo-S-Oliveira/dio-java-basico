@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ExemploOrdenacao {
+
     /*Dadas as seguintes informações sobre meus gatos, crie uma lista
 e ordene esta lista exibindo:
 (nome - idade - cor);
@@ -18,7 +18,7 @@ Gato 3 = nome: Jon, idade: 12, cor: amarelo
 
 public class ExemploOrdenacaoList {
     public static void main(String[] args) {
-
+         
         List<Gato> meusGatos = new ArrayList<>(){{
             add(new Gato("Jon", 12, "preto"));
             add(new Gato("Simba", 6, "tigrado"));
@@ -122,4 +122,4 @@ class ComparatorNomeCorIdade implements Comparator<Gato> {
 
     }
 }
-}
+

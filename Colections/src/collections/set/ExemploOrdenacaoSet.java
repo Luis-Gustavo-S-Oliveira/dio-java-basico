@@ -9,7 +9,7 @@ public class ExemploOrdenacaoSet {
             add(new Serie("got", "fantasia", 60));
             add(new Serie("dark", "drama", 60));
             add(new Serie("that '70s show", "comédia", 25));
-        }};
+        }}; 
         for (Serie serie: minhasSeries) System.out.println(serie.getNome() + " - "
                 + serie.getGenero() + " - " + serie.getTempoEpisodio());
 
@@ -35,12 +35,14 @@ public class ExemploOrdenacaoSet {
 
         System.out.println("--\tOrdem gênero\t--");
         Set<Serie> minhasSeries4 = new TreeSet<>(new ComparatorGenero());
+        minhasSeries4.addAll(minhasSeries);
         for (Serie serie : minhasSeries4) System.out.println(serie.getNome() + " - "
         + serie.getGenero() + " - " + serie.getTempoEpisodio());
         
 
         System.out.println("--\tOrdem Tempo Episódio\t--");
         Set<Serie> minhasSeries5 = new TreeSet<>(new Comparatortempo());
+        minhasSeries5.addAll(minhasSeries);
         for (Serie serie : minhasSeries5) System.out.println(serie.getNome() + " - "
         + serie.getGenero() + " - " + serie.getTempoEpisodio());
         
@@ -136,6 +138,9 @@ class Comparatortempo implements Comparator<Serie>{
     
         int tempoEpisodio = s1.getTempoEpisodio().compareTo(s2.getTempoEpisodio());
         if (tempoEpisodio != 0) return tempoEpisodio;
+
+        int nome = s1.getNome().compareTo(s2.getNome());
+        if (nome != 0) return nome;
 
         return Integer.compare(s1.getTempoEpisodio(), s2.getTempoEpisodio());
     }
